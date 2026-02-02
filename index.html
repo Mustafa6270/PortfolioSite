@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Yıldırım | Aircraft Maintenance & Computer Programming</title>
+    <meta name="description"
+        content="Portfolio of Mustafa Yıldırım, an Aircraft Maintenance Technician and Computer Programming Student.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MY</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="lang-switch">
+                    <span class="active" onclick="setLanguage('en')">EN</span>
+                    <span>|</span>
+                    <span onclick="setLanguage('tr')">TR</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="profile-photo-container">
+                    <!-- Placeholder src, user can replace -->
+                    <img src="IMG_5083.JPG" alt="Mustafa Yıldırım" class="profile-photo">
+                </div>
+                <h1 class="glitch" data-text="Mustafa Yıldırım">Mustafa Yıldırım</h1>
+                <h2 class="typewriter" data-i18n="hero.role">Aircraft Maintenance Technician <span
+                        class="accent">&</span> Computer
+                    Programming Student</h2>
+                <p data-i18n="hero.desc">Bridging the gap between aviation precision and digital innovation.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary" data-i18n="hero.contact">Get in Touch</a>
+                    <a href="#experience" class="btn secondary" data-i18n="hero.work">View Work</a>
+                </div>
+            </div>
+            <div class="hero-background">
+                <!-- Abstract tech/aviation background handled in CSS/JS -->
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p data-i18n="about.p1">I am a passionate and detail-oriented professional with a unique blend
+                            of expertise in
+                            <strong>Aircraft Maintenance</strong> and <strong>Computer Programming</strong>.
+                        </p>
+                        <p data-i18n="about.p2">Currently pursuing an Associate Degree in Computer Programming at Fırat
+                            Üniversitesi, I bring
+                            hands-on experience from world-class aviation companies like <strong>Pratt & Whitney
+                                (Turkish Engine Center)</strong>, Boeing, and Airbus. My goal is to leverage my
+                            technical skills in Python, C++, and aviation mechanics to solve complex problems and drive
+                            innovation.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-plane"></i>
+                            <h3 data-i18n="about.stats.aviation">Aviation</h3>
+                            <p data-i18n="about.stats.aviation_desc">Maintenance & Disassembly</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-code"></i>
+                            <h3 data-i18n="about.stats.programming">Programming</h3>
+                            <p>Python, C++</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h3 data-i18n="about.stats.design">Design</h3>
+                            <p data-i18n="about.stats.design_desc">AutoCAD, 3D Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2024 - Sep 2024</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.pw_student.title">Intern Student</h3>
+                            <h4>Pratt & Whitney (Turkish Engine Center)</h4>
+                            <p data-i18n="experience.pw_student.desc">Specialized in the Module Disassembly Department.
+                                Gained hands-on experience with turbine
+                                engine components and maintenance procedures in Istanbul, Turkey.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2024 - Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.pw_intern.title">Intern</h3>
+                            <h4>Pratt & Whitney</h4>
+                            <p data-i18n="experience.pw_intern.desc">Summer internship program focusing on aviation
+                                maintenance protocols and safety
+                                standards.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2023 - Jun 2024</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.skunkworks.title">Intern</h3>
+                            <h4>SkunkWorks</h4>
+                            <p data-i18n="experience.skunkworks.desc">Remote/Hybrid internship engaging with advanced
+                                projects and methodologies.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2023 - Sep 2023</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.boeing.title">Intern</h3>
+                            <h4>Boeing</h4>
+                            <p data-i18n="experience.boeing.desc">Gained exposure to large-scale aerospace operations
+                                and manufacturing support
+                                (Hybrid/France).</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2023 - Jun 2023</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.airbus.title">Intern</h3>
+                            <h4>Airbus</h4>
+                            <p data-i18n="experience.airbus.desc">Initial exposure to the aviation industry working with
+                                a global leader in aeronautics
+                                (Hybrid/France).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title" data-i18n="skills.title">Technical Proficiency</h2>
+                <div class="skills-wrapper">
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.prog_os"><i class="fas fa-laptop-code"></i> Programming & OS</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>GNU/Linux</span>
+                            <span data-i18n="skills.comp_prog">Computer Programming</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.eng_design"><i class="fas fa-tools"></i> Engineering & Design</h3>
+                        <div class="skill-tags">
+                            <span>AutoCAD</span>
+                            <span>3D Design</span>
+                            <span data-i18n="skills.aircraft_maint">Aircraft Maintenance</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.media"><i class="fas fa-photo-video"></i> Media & Tools</h3>
+                        <div class="skill-tags">
+                            <span>Final Cut Pro</span>
+                            <span>Logic Pro</span>
+                            <span data-i18n="skills.office">Office Tools</span>
+                            <span>Mac & PC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title" data-i18n="education.title">Education</h2>
+                <div class="education-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <div class="edu-info">
+                            <h3>Fırat Üniversitesi</h3>
+                            <p class="degree" data-i18n="education.firat.degree">Associate Degree, Computer Programming
+                            </p>
+                            <p class="year">2025 - 2027 (Expected)</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-info">
+                            <h3>Sabiha Gökçen MTAL</h3>
+                            <p class="degree" data-i18n="education.sabiha.degree">Aircraft Maintenance Technician</p>
+                            <p class="year">2021 - 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+                <div class="contact-content">
+                    <p data-i18n="contact.desc">Interested in collaboration or have a question? Feel free to reach out.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:6270mst@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>6270mst@gmail.com</span>
+                        </a>
+                        <a href="tel:+905394816270" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+90 (539) 481 62 70</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mustafa-y%C4%B1ld%C4%B1r%C4%B1m-a06336263/" target="_blank"
+                            class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Mustafa Yıldırım</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mustafa Yıldırım. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
