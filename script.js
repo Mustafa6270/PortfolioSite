@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             hero: {
                 role: "Aircraft Maintenance Technician <span class=\"accent\">&</span> Computer Programming Student",
-                desc: "Bridging the gap between aviation precision and digital innovation.",
+                desc: "",
                 contact: "Get in Touch",
                 work: "View Work"
             },
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             hero: {
                 role: "Uçak Bakım Teknisyeni <span class=\"accent\">&</span> Bilgisayar Programcılığı Öğrencisi",
-                desc: "Havacılık hassasiyeti ve dijital inovasyon arasındaki boşluğu dolduruyor.",
+                desc: "",
                 contact: "İletişime Geç",
                 work: "Çalışmalarımı Gör"
             },
